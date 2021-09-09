@@ -132,6 +132,11 @@ public class UserPropertyFileStorage implements UserLookupProvider.Streams, User
                 public void setUsername(String username) {
                     throw new RuntimeException("Unsupported");
                 }
+
+                @Override
+                public void persist() {
+
+                }
             };
         } else {
             return new AbstractUserAdapter.Streams(session, realm, model) {

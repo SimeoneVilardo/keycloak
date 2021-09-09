@@ -146,6 +146,7 @@ public class RegistrationUserCreation implements FormAction, FormActionFactory {
         if (authType != null) {
             context.getEvent().detail(Details.AUTH_TYPE, authType);
         }
+        user.persist();
     }
 
     @Override

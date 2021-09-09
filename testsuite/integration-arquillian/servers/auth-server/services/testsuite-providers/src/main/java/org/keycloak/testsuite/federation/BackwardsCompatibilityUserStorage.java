@@ -101,6 +101,11 @@ public class BackwardsCompatibilityUserStorage implements UserLookupProvider, Us
                 }
             }
 
+            @Override
+            public void persist() {
+
+            }
+
         };
     }
 

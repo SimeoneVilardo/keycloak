@@ -164,6 +164,11 @@ public class PassThroughFederatedUserStorageProvider implements
             public void setUsername(String username) {
 
             }
+
+            @Override
+            public void persist() {
+
+            }
         };
     }
 }

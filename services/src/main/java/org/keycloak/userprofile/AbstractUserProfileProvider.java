@@ -254,7 +254,7 @@ public abstract class AbstractUserProfileProvider<U extends UserProfileProvider>
                     if (userName == null) {
                         userName = attributes.getFirstValue(UserModel.EMAIL);
                     }
-
+//here
                     user = session.users().addUser(session.getContext().getRealm(), userName);
                 }
 

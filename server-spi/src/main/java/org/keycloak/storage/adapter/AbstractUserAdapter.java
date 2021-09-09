@@ -465,5 +465,9 @@ public abstract class AbstractUserAdapter extends UserModelDefaultMethods {
             return RoleUtils.hasRole(this.getRoleMappingsStream(), role)
                     || RoleUtils.hasRoleFromGroup(this.getGroupsStream(), role, true);
         }
+
+        public void persist() {
+            
+        }
     }
 }

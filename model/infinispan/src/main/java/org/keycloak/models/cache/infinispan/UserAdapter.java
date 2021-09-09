@@ -279,6 +279,11 @@ public class UserAdapter implements CachedUserModel.Streams {
     }
 
     @Override
+    public void persist() {
+
+    }
+
+    @Override
     public Stream<RoleModel> getRealmRoleMappingsStream() {
         if (updated != null) return updated.getRealmRoleMappingsStream();
         return getRoleMappingsStream().filter(r -> RoleUtils.isRealmRole(r, realm));

@@ -513,6 +513,11 @@ public class UserAdapter implements UserModel.Streams, JpaModel<UserEntity> {
         user.setServiceAccountClientLink(clientInternalId);
     }
 
+    @Override
+    public void persist() {
+
+    }
+
 
     @Override
     public boolean equals(Object o) {

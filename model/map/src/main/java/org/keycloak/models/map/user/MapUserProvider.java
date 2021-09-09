@@ -90,6 +90,11 @@ public class MapUserProvider implements UserProvider.Streams, UserCredentialStor
         // Clone entity before returning back, to avoid giving away a reference to the live object to the caller
         return origEntity -> new MapUserAdapter(session, realm, origEntity) {
             @Override
+            public void persist() {
+
+            }
+
+            @Override
             public boolean checkEmailUniqueness(RealmModel realm, String email) {
                 return getUserByEmail(realm, email) != null;
             }

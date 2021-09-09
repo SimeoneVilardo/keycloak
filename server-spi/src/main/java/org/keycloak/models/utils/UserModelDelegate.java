@@ -260,4 +260,9 @@ public class UserModelDelegate implements UserModel.Streams {
     public int hashCode() {
         return getDelegate().getId().hashCode();
     }
+
+    @Override
+    public void persist() {
+        // TODO Auto-generated method stub       
+    }
 }
