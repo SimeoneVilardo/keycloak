@@ -255,6 +255,11 @@ public class InMemoryUserAdapter extends UserModelDefaultMethods.Streams {
     }
 
     @Override
+    public void persist() {
+
+    }
+
+    @Override
     public Stream<RoleModel> getRealmRoleMappingsStream() {
         return getRoleMappingsStream().filter(RoleUtils::isRealmRole);
     }
